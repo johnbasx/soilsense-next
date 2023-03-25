@@ -25,12 +25,6 @@ export default function Home() {
       <OurAppsSteps />
       <ReviewSection />
       <CallToAction />
-      {/*<PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
-        <Reviews />
-        <Pricing /> */}
-      {/* <Faqs /> */}
     </Layout>
   )
 }
