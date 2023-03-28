@@ -31,7 +31,7 @@ const Team = () => {
   // const { t } = useTranslation("about");
 
   return (
-    <div className="flex flex-col py-12 bg-primary-500">
+    <div className="flex flex-col py-24 bg-primary-500">
       <div className="container px-4 mx-auto max-w-7xl">
         <div className="flex flex-wrap justify-center mb-12 text-center">
           <div className="w-full px-4 lg:w-6/12">
