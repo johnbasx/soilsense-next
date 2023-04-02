@@ -17,7 +17,7 @@ export const navigationLinks = [
   {
     id: createID(),
     label: 'Case Studies',
-    link: '#!',
+    link: '/case-studies',
   },
   {
     id: createID(),

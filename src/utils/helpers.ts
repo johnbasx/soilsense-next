@@ -1,3 +1,4 @@
+import { combinedStudiesData } from '@/components/case-study/caseStudiesData'
 import { nanoid } from 'nanoid'
 
 export const createID = () => {
@@ -23,4 +24,11 @@ export function shuffle<T>(array: T[]): T[] {
   }
 
   return array
+}
+
+export function findCaseStudyById(id: string) {
+  const result = combinedStudiesData.filter((item) => {
+    return item.id === id
+  })[0]
+  return result
 }

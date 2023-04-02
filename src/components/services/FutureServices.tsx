@@ -5,7 +5,7 @@ import clsx from 'clsx'
 // import { useTranslation } from "next-i18next";
 import { TbArrowRight } from 'react-icons/tb'
 
-export const endToEndSupplyData = [
+export const futureServicesData = [
   {
     id: nanoid(),
     heading: 'Satellite Mapping',
@@ -47,9 +47,23 @@ export const endToEndSupplyData = [
       },
     ],
   },
+  {
+    id: nanoid(),
+    heading: 'Robots & Drones',
+    tagline: 'Intrduction to robots and drones for farming',
+    image:
+      'https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHJvYm90c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60',
+    points: [
+      {
+        id: nanoid(),
+        about:
+          'The use of drones in almost every sector of the economy is growing fast, but drone usage in the agricultural industry is booming. According to some reports, the agricultural drone market is expected to grow from a $1.2 billion(USD) industry in 2019 to $4.8 billion in 2024. From scouting to security, drone use will become more ubiquitous on large and small scale farms in a few short years.',
+      },
+    ],
+  },
 ]
 
-const EndToEndSupply = () => {
+const FutureServices = () => {
   //   const { t } = useTranslation("services");
   //   const endToEndTranslations = t("end-to-end-supply.data", {
   //     returnObjects: true,
@@ -68,7 +82,7 @@ const EndToEndSupply = () => {
           {/* {t("end-to-end-supply.description")} */}
         </p>
       </div>
-      {endToEndSupplyData.map((item, index) => (
+      {futureServicesData.map((item, index) => (
         <section key={item.id}>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
             <div
@@ -111,7 +125,7 @@ const EndToEndSupply = () => {
                         className="inline-flex items-start gap-2"
                       >
                         <TbArrowRight className="flex-shrink-0 w-5 h-5 mt-1 text-xl" />
-                        <span>
+                        <span className="line-clamp-4">
                           {point.about}
                           {/* {endToEndTranslations[index].points[idx].about} */}
                         </span>
@@ -128,4 +142,4 @@ const EndToEndSupply = () => {
   )
 }
 
-export default EndToEndSupply
+export default FutureServices

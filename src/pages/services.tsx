@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { nanoid } from 'nanoid'
 import FutureServices from '@/components/services/FutureServices'
 import ServicesHero from '@/components/services/ServicesHero'
+import SoilHealth from '@/components/services/SoilHealth'
 
 const featuresData = [
   {
@@ -93,7 +94,7 @@ const ServicesPage = () => {
     ]
   )
   return (
-    <Layout title="Home - Soil Sense | Plantation with Tech">
+    <Layout title="Services - Soil Sense | Plantation with Technology">
       <ServicesHero />
       <Container className="py-8 md:py-12">
         <div className="flex items-center justify-center text-center">
@@ -137,6 +138,7 @@ const ServicesPage = () => {
           ))}
         </div>
       </div>
+      <SoilHealth />
       <FutureServices />
     </Layout>
   )

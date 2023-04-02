@@ -13,7 +13,7 @@ import {
 } from '@/contents/heroServices'
 import Image from 'next/image'
 
-export function Hero() {
+export function WhySoilSense() {
   return (
     <div className="pt-12 pb-20 overflow-hidden sm:py-32 lg:pb-32 xl:pb-36">
       <Container>
@@ -68,7 +68,7 @@ export function Hero() {
             </p>
             <ul
               role="list"
-              className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
+              className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-6 gap-y-8 lg:mx-0 lg:justify-start"
             >
               {currentServicesData.map(({ id, name, image }) => (
                 <li
@@ -90,12 +90,12 @@ export function Hero() {
             </ul>
           </div>
           <div className="relative mt-10 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-xl font-semibold text-center text-gray-900 lg:text-left">
+            <p className="text-3xl font-semibold text-center text-gray-900 lg:text-left">
               Future services
             </p>
             <ul
               role="list"
-              className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-10 gap-y-8 lg:mx-0 lg:justify-start"
+              className="flex flex-wrap justify-center max-w-xl mx-auto mt-8 gap-x-4 gap-y-8 lg:mx-0 lg:justify-start"
             >
               {futureServicesData.map(({ id, name, image }) => (
                 <li

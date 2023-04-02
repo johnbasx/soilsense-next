@@ -3,12 +3,13 @@ import clsx from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { TbArrowRight, TbChevronUp, TbMenu2 } from 'react-icons/tb'
 import { ButtonLink } from './Button'
 import Carousel from './carousel/Carousel'
 import { Container } from './Container'
 import PlayStoreDownload from './footer/PlayStoreDownload'
+import LocaleSwitcher from './language/LocaleSwitcher'
 import { Logo } from './Logo'
 import { navigationLinks, NavLinks } from './NavLinks'
 
@@ -31,6 +32,8 @@ function MobileNavLink({ children, ...props }: MobileNavProps) {
 export function Header({ carousel = false, dark = true }) {
   const router = useRouter()
   const currentRoute = router.pathname
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
   return (
     <header className="relative">
       {carousel && (
@@ -64,6 +67,7 @@ export function Header({ carousel = false, dark = true }) {
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
+                  <LocaleSwitcher onClick={() => setMobileMenuOpen(false)} />
                   <ButtonLink
                     href="/login"
                     variant="outline-white"
@@ -132,6 +136,9 @@ export function Header({ carousel = false, dark = true }) {
                                 </MobileNavLink>
                               ))}
                             </div>
+                            <LocaleSwitcher
+                              onClick={() => setMobileMenuOpen(false)}
+                            />
                             <div className="flex flex-col gap-4 px-3 mt-8">
                               {/* <ButtonLink
                               href='/login'

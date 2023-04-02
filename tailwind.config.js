@@ -39,6 +39,10 @@ module.exports = {
       backgroundImage: {
         'green-land': "url('/public/assets/images/green-land.jpg')",
       },
+      listStyleImage: {
+        checkmark: 'url("/public/checkmark.png")',
+      },
+
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',

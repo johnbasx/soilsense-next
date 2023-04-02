@@ -2,7 +2,7 @@ import { CallToAction } from '@/components/CTA/CallToAction'
 import MonitorAndControl from '@/components/CTA/MonitorAndControl'
 import OurAppsSteps from '@/components/CTA/OurAppsSteps'
 import PersonalisedFarming from '@/components/CTA/PersonalisedFarming'
-import { Hero } from '@/components/hero/Hero'
+import { WhySoilSense } from '@/components/hero/WhySoilSense'
 import ReviewSection from '@/components/reviews/ReviewSection'
 import Layout from '@/components/layout/Layout'
 // import { Hero } from '@components/Hero'
@@ -19,7 +19,7 @@ export default function Home() {
       dark={false}
     >
       {/* <Carousel /> */}
-      <Hero />
+      <WhySoilSense />
       <PersonalisedFarming />
       <MonitorAndControl />
       <OurAppsSteps />
