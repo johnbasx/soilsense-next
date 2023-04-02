@@ -18,12 +18,13 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "clsx": "^1.2.1",
+    "cookies-next": "^2.1.1",
     "date-fns": "^2.29.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "framer-motion": "^10.6.0",
     "github-slugger": "^2.0.0",
-    "i18next": "^22.4.12",
+    "i18next": "^22.4.13",
     "keen-slider": "^6.8.5",
     "next": "13.2.4",
     "next-i18next": "^13.2.2",
@@ -31,10 +32,12 @@
     "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
     "react-intersection-observer": "^9.4.3",
     "react-multi-carousel": "^2.8.2",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.56.0",

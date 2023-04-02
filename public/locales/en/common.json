@@ -1,0 +1,27 @@
+{
+  "title": "SoilSense | Plantation with Technology",
+  "company": "SN Silos Pvt Ltd",
+  "navigation-links": [
+    {
+      "label": "Services",
+      "link": "/services"
+    },
+    {
+      "label": "About",
+      "link": "/about"
+    },
+    {
+      "label": "Case Studies",
+      "link": "/case-studies"
+    },
+    {
+      "label": "Contact",
+      "link": "/contact"
+    }
+  ],
+  "change-language": "Change language",
+  "download": "Download the app",
+  "login": "Login",
+  "new": "Don't have an account",
+  "register": "Register"
+}

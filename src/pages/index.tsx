@@ -5,19 +5,14 @@ import PersonalisedFarming from '@/components/CTA/PersonalisedFarming'
 import { WhySoilSense } from '@/components/hero/WhySoilSense'
 import ReviewSection from '@/components/reviews/ReviewSection'
 import Layout from '@/components/layout/Layout'
-// import { Hero } from '@components/Hero'
-// import { Pricing } from '@components/Pricing'
-// import { PrimaryFeatures } from '@components/PrimaryFeatures'
-// import { Reviews } from '@components/Reviews'
-// import { SecondaryFeatures } from '@components/SecondaryFeatures'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { GetStaticProps } from 'next'
+import { useTranslation } from 'next-i18next'
 
 export default function Home() {
+  const { t } = useTranslation('home')
   return (
-    <Layout
-      title="Home - Soil Sense | Plantation with Tech"
-      carousel
-      dark={false}
-    >
+    <Layout title={t('title')} carousel dark={false}>
       {/* <Carousel /> */}
       <WhySoilSense />
       <PersonalisedFarming />
@@ -28,3 +23,9 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, ['home', 'common'])),
+  },
+})

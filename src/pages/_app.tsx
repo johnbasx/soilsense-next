@@ -2,8 +2,9 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
 import NextNProgress from 'nextjs-progressbar'
+import { appWithTranslation } from 'next-i18next'
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   //at the first render initialRenderComplete is false
   const [initialRenderComplete, setInitialRenderComplete] =
     useState<boolean>(false)
@@ -25,3 +26,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+export default appWithTranslation(App)

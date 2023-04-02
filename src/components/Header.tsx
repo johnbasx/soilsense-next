@@ -12,6 +12,7 @@ import PlayStoreDownload from './footer/PlayStoreDownload'
 import LocaleSwitcher from './language/LocaleSwitcher'
 import { Logo } from './Logo'
 import { navigationLinks, NavLinks } from './NavLinks'
+import { useTranslation } from 'next-i18next'
 
 interface MobileNavProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
@@ -33,6 +34,10 @@ export function Header({ carousel = false, dark = true }) {
   const router = useRouter()
   const currentRoute = router.pathname
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { t } = useTranslation('common')
+  const navigationTranslated = t('navigation-links', {
+    returnObjects: true,
+  })
 
   return (
     <header className="relative">
@@ -67,7 +72,10 @@ export function Header({ carousel = false, dark = true }) {
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <LocaleSwitcher onClick={() => setMobileMenuOpen(false)} />
+                  <div className="hidden font-semibold lg:block">
+                    <LocaleSwitcher onClick={() => setMobileMenuOpen(false)} />
+                  </div>
+
                   <ButtonLink
                     href="/login"
                     variant="outline-white"
@@ -122,7 +130,7 @@ export function Header({ carousel = false, dark = true }) {
                             className="absolute inset-x-0 top-0 z-0 px-6 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 pt-28 shadow-gray-900/20"
                           >
                             <div className="space-y-4">
-                              {navigationLinks.map((item) => (
+                              {navigationLinks.map((item, index) => (
                                 <MobileNavLink
                                   href={item.link}
                                   className={clsx(
@@ -132,14 +140,19 @@ export function Header({ carousel = false, dark = true }) {
                                   )}
                                   key={'Mobile-navigation-' + item.id}
                                 >
-                                  <span>{item.label}</span>
+                                  <span>
+                                    {navigationTranslated[index].label}
+                                  </span>
                                 </MobileNavLink>
                               ))}
+                              <div className="px-3 py-2">
+                                <LocaleSwitcher
+                                  onClick={() => setMobileMenuOpen(false)}
+                                />
+                              </div>
                             </div>
-                            <LocaleSwitcher
-                              onClick={() => setMobileMenuOpen(false)}
-                            />
-                            <div className="flex flex-col gap-4 px-3 mt-8">
+
+                            <div className="flex flex-col gap-4 px-3 mt-4">
                               {/* <ButtonLink
                               href='/login'
                               variant='outline'

@@ -1,0 +1,25 @@
+{
+  "title": "Error!! - 404",
+  "heading": "We lost this page",
+  "error": "404 error!",
+  "about": "We couldn’t find what you’re looking for in our website. Let’s find a better place for you to go.",
+  "go-back": "Go back",
+  "home": "Take me home",
+  "cards": [
+    {
+      "heading": "About SN Silos",
+      "tagline": "Want to know more about us?",
+      "link-text": "Know more"
+    },
+    {
+      "heading": "Our blog & press",
+      "tagline": "Read the latest posts and photos.",
+      "link-text": "View lastest posts"
+    },
+    {
+      "heading": "Want to talk with us?",
+      "tagline": "Can’t find what you’re looking for?",
+      "link-text": "Chat with our team"
+    }
+  ]
+}

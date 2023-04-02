@@ -20,12 +20,12 @@ const LocaleSwitcher = ({ onClick }: { onClick: () => void }) => {
             key={locale}
             href={{ pathname, query }}
             as={asPath}
-            className="flex items-center gap-3 font-medium text-white md:justify-center"
+            className="flex items-center gap-3 font-medium text-black md:justify-center"
             locale={locale}
             onClick={onClick}
           >
             <div className="block md:hidden">
-              <span>Change language</span>
+              <span>Change language : </span>
               <span className="font-semibold underline">
                 {locale == 'hn' && 'Hindi'}
                 {locale == 'en' && 'English'}
