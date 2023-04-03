@@ -15,7 +15,7 @@ const CaseStudyBlock = ({ ...item }: CaseStudyBlockProps) => {
       className="px-6 py-6 border-2 md:py-8 border-gray-200/50 rounded-3xl"
     >
       <article>
-        <div className="gap-6 space-y-4 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+        <div className="gap-6 space-y-4 xl:grid xl:grid-cols-4 xl:items-start xl:space-y-0">
           <Link href={`/case-study/${item.id}`}>
             <Image
               src={item.image}
