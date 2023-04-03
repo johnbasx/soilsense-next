@@ -46,7 +46,7 @@ const CaseStudyDynamicPage = ({ id: caseId }: IParams) => {
                     <Image
                       width={100}
                       height={100}
-                      className="object-cover w-16 h-16 mr-4 rounded-full"
+                      className="object-cover w-16 h-16 mr-4 rounded-full max-h-[60vh]"
                       src={singleCaseStudy.author?.profileImage}
                       alt={singleCaseStudy.author?.name}
                     />
