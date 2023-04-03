@@ -1,3 +1,139 @@
 {
-  "title": "Home - Soil Sense | Plantation with Technology"
+  "title": "Home - Soil Sense | Plantation with Technology",
+  "carousel-header": {
+    "items": [
+      {
+        "heading": "Soil Sense",
+        "tagline": "Innovation in precise Agriculture"
+      },
+      {
+        "heading": "Smart irrigation",
+        "tagline": "Reduces water scarcity risk and prevents exploitation of underground water table"
+      },
+      {
+        "heading": "Soil Nutrients",
+        "tagline": "Balance with Organic Manure"
+      }
+    ]
+  },
+
+  "why-soil-sense": {
+    "title": "Why soil sense?",
+    "about": "By leveraging the technology and Agricultural insights, you’ll know exactly when and to give nutrients to plants, weather forecast, irrigation scheduling, all these to help you maximize profits and yield more.",
+    "watch-video": "Watch the video",
+    "our-current-services": "Our Current services",
+    "current-services": [
+      {
+        "name": "Soil Nutrient Balance (NPK)"
+      },
+      {
+        "name": "Soil health (EC and pH)"
+      },
+      {
+        "name": "Efficient Irrigation (Moisture)"
+      },
+      {
+        "name": "Weather Conditions"
+      }
+    ],
+    "our-future-services": "Our Future Services",
+
+    "future-services": [
+      {
+        "name": "Satellite Mapping"
+      },
+      {
+        "name": "Remote farming"
+      },
+      {
+        "name": "Pest/Disease forecast"
+      },
+      {
+        "name": "Weather Forecast"
+      },
+      {
+        "name": "Introduction of Robots and Drones"
+      }
+    ]
+  },
+
+  "personalised-farming": {
+    "title": "Personalized farming",
+    "about": "Customised farming just for you with our Techland app. Grow plants on 1,902 acres of land with our technology.",
+    "get-started": "Get Started Today"
+  },
+
+  "monitor-and-control": {
+    "title": "We monitor and control 8 soil parameters",
+    "about": "The purpose of developing a monitoring and control process is to take advantage of opportunities to improve a situation; that is, to make changes when alternatives are available, and to avoid crisis management. In farming, a goal of monitoring and controlling could be: being prepared to make necessary changes during the production season, rather than between production seasons.",
+    "button": "Let's start monitoring",
+    "parameters": [
+      {
+        "name": "Electrical Conductivity",
+        "description": "Soil electrical conductivity, referred to as EC, is the ability of soil to conduct (transmit) or attenuate electrical current. EC is expressed in milliSiemens per meter (mS/m) or at times is reported in deciSiemens per meter (dS/m)"
+      },
+      {
+        "name": "Soil pH Level",
+        "description": "Most soils have pH values between 3.5 and 10. In higher rainfall areas the natural pH of soils typically ranges from 5 to 7, while in drier areas the range is 6.5 to 9."
+      },
+      {
+        "name": "Nitrogen(N) Level",
+        "description": "In sand soils, the best balance is achieved by a “Moderate” soil nitrogen supply (25 - 50 mg-N/kg soil). In contrast, in loam and clay soils “High” soil nitrogen supply is most suitable (50 - 75 and 75 - 125 mg-N/kg soil respectively)."
+      },
+      {
+        "name": "Phosphorus(P) Level",
+        "description": "Healthy levels of Phosphorus in soil ranges from 25 to 50 ppm. The University of Nebraska-Lincoln gives the following guidelines to consider when analyzing your P levels in soil"
+      },
+      {
+        "name": "Potassium(K) Content",
+        "description": "Potassium is a major plant nutrient that is less directly impacted by soil pH, but still is to some extent (especially when soil pH drops below 5.5.) Healthy levels of potassium in soil range from 40 to 80 ppm."
+      },
+      {
+        "name": "Soil Moisture Levels",
+        "description": "Generally, soil moisture will range from 10% to 45%, but can be higher during and after watering. The water in your soil is stored on the surface of the soil particles, as well as in the pores, which are holes or gaps between individual soil particles."
+      },
+      {
+        "name": "Soil Temperature",
+        "description": "The average soil temperatures for bioactivity range from 50 to 75°F (10-24°C). These values are favorable for the normal life functions of the ground biota that ensure proper organic matter decomposition, increased nitrogen mineralization, uptake of soluble substances, and metabolism."
+      },
+      {
+        "name": "Soil Humidity",
+        "description": "Ultimately, the soil moisture effect on plants and the yield is vital. The optimal range of soil moisture content for crops depends on the specific plant species, but the range for most crops is between 20% and 60%."
+      }
+    ]
+  },
+
+  "our-apps-steps": {
+    "title": "Our amazing apps",
+    "about": "We aim to provide the best solutions with advanced technology and features from optimizing plantations and organic yields to while reaching the customers through our digital platform.",
+    "learn-more": "Learn more",
+    "apps": [
+      {
+        "name": "SoilSense",
+        "description": "Soil health management services, that provides IoT based kits to be installed in farms to collect soil parameters."
+      },
+      {
+        "name": "TechLand",
+        "description": "Invest in agriculture land to grow your wealth and income."
+      },
+      {
+        "name": "OrganicChef",
+        "description": "A Platform that sells fresh and organic grocery like fruit,vegetables, spices, herbs and much more."
+      }
+    ]
+  },
+
+  "testimonials": {
+    "heading": "Testimonial and Reviews",
+    "tagline": "We love",
+    "sub-heading": "What people say about us",
+    "verified-customer": "Verified customer",
+    "empty-card-heading": "Want to view more testimonials & reviews of our awesome customers?",
+    "view-more": "View more"
+  },
+
+  "call-to-action": {
+    "title": "Get your first tips today",
+    "about": "It takes 30 seconds to sign up. Download the app and create an account today and let's start making progress."
+  }
 }

@@ -6,14 +6,18 @@ import CaseStudyBlock from '@/components/case-study/CaseStudyBlock'
 import Title from '@/components/Title'
 import RelatedCaseStudies from '@/components/case-study/RelatedCaseStudies'
 import { caseStudiesData } from '@/components/case-study/caseStudiesData'
+import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 const CaseStudiesPage = () => {
+  const { t } = useTranslation('casestudy')
   return (
-    <Layout title="Home - Soil Sense | Plantation with Tech">
+    <Layout title={t('title')}>
       <Container>
         <Title
-          title="Soil Sense - Case Studies"
-          para="Sample records for case studies soil hat pertain to the concept of soil quality are discussed below including a discussion of what can and cannot be changed with management"
+          title={t('heading')}
+          para={t('tagline')}
           containerStyles="mt-12"
         />
         <ul className="flex flex-col gap-4 my-8">
@@ -29,3 +33,12 @@ const CaseStudiesPage = () => {
 }
 
 export default CaseStudiesPage
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale as string, [
+      'casestudy',
+      'common',
+    ])),
+  },
+})

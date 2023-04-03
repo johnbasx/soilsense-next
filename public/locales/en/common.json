@@ -1,6 +1,8 @@
 {
   "title": "SoilSense | Plantation with Technology",
-  "company": "SN Silos Pvt Ltd",
+  "company": "SoilSense Pvt Ltd",
+  "about": "Let's dive into the future of Agriculture & Plantation with the power of advanced technologies.",
+
   "navigation-links": [
     {
       "label": "Services",
@@ -19,9 +21,50 @@
       "link": "/contact"
     }
   ],
-  "change-language": "Change language",
+
+  "change": "Change language",
   "download": "Download the app",
   "login": "Login",
   "new": "Don't have an account",
-  "register": "Register"
+  "register": "Register",
+  "demo": "Request a demo",
+
+  "footer": [
+    {
+      "footerHead": "Services",
+      "links": [
+        "Company Review",
+        "Innovate with us",
+        "Consulting",
+        "Tips & Tricks"
+      ]
+    },
+    {
+      "footerHead": "Company",
+      "links": [
+        "SoilSense Profile",
+        "Meet the team",
+        "Testimonials",
+        "Work we've done"
+      ]
+    },
+    {
+      "footerHead": "About",
+      "links": ["What we do?", "Join our team", "Work with us"]
+    },
+    {
+      "footerHead": "Case studies",
+      "links": ["Studies", "Research"]
+    },
+    {
+      "footerHead": "Contact",
+      "links": [
+        "A-47/6, opp. Jain Support Mandir, Udhyog Nagar, Punjab, India - 123456",
+        "+91-9977553300"
+      ]
+    }
+  ],
+
+  "terms": "Terms & Conditions",
+  "privacy": "Privacy Policy"
 }

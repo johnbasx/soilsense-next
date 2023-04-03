@@ -23,7 +23,7 @@ const Custom404Page = () => {
       <div className="container flex items-center justify-center min-h-screen px-6 py-12 mx-auto">
         <div className="w-full ">
           <div className="flex flex-col items-center max-w-lg mx-auto text-center">
-            <p className="text-2xl font-semibold text-emerald-600">
+            <p className="text-2xl font-semibold text-primary-600">
               {/* 404 error! */}
               {t('error')}
             </p>
@@ -52,7 +52,7 @@ const Custom404Page = () => {
 
               <Link
                 href="/"
-                className="w-1/2 px-5 py-2 text-sm font-semibold text-white transition-colors duration-200 rounded-md bg-emerald-800 shrink-0 sm:w-auto hover:bg-emerald-700"
+                className="w-1/2 px-5 py-2 text-sm font-semibold text-white transition-colors duration-200 rounded-md bg-primary-500 shrink-0 sm:w-auto hover:bg-primary-600"
               >
                 {/* Take me home */}
                 {t('home')}
@@ -61,7 +61,7 @@ const Custom404Page = () => {
           </div>
 
           <div className="grid w-full max-w-6xl grid-cols-1 gap-8 mx-auto mt-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="p-6 rounded-2xl bg-emerald-50">
+            <div className="p-6 rounded-2xl bg-primary-50">
               <span className="text-gray-500">
                 <TbFileInfo className="w-8 h-8" />
               </span>
@@ -78,7 +78,7 @@ const Custom404Page = () => {
 
               <Link
                 href="/about"
-                className="inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline"
+                className="inline-flex items-center mt-4 text-sm text-primary-500 gap-x-2 hover:underline"
               >
                 <span>
                   {/* Know more */}
@@ -89,7 +89,7 @@ const Custom404Page = () => {
               </Link>
             </div>
 
-            <div className="p-6 rounded-2xl bg-emerald-50">
+            <div className="p-6 rounded-2xl bg-primary-50">
               <span className="text-gray-500">
                 <TbBook className="w-8 h-8" />
               </span>
@@ -106,7 +106,7 @@ const Custom404Page = () => {
 
               <Link
                 href="/press"
-                className="inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline"
+                className="inline-flex items-center mt-4 text-sm text-primary-500 gap-x-2 hover:underline"
               >
                 <span>
                   {/* View lastest posts */}
@@ -117,7 +117,7 @@ const Custom404Page = () => {
               </Link>
             </div>
 
-            <div className="p-6 rounded-2xl bg-emerald-50">
+            <div className="p-6 rounded-2xl bg-primary-50">
               <span className="text-gray-500">
                 <TbMessage2 className="w-8 h-8" />
               </span>
@@ -134,7 +134,7 @@ const Custom404Page = () => {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center mt-4 text-sm text-emerald-500 gap-x-2 hover:underline"
+                className="inline-flex items-center mt-4 text-sm text-primary-500 gap-x-2 hover:underline"
               >
                 <span>
                   {/* Chat with our team */}

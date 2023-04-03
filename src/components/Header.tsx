@@ -35,7 +35,7 @@ export function Header({ carousel = false, dark = true }) {
   const currentRoute = router.pathname
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { t } = useTranslation('common')
-  const navigationTranslated = t('navigation-links', {
+  const Tnavigation = t('navigation-links', {
     returnObjects: true,
   })
 
@@ -81,14 +81,19 @@ export function Header({ carousel = false, dark = true }) {
                     variant="outline-white"
                     className="hidden font-semibold lg:block"
                   >
-                    Download the app
+                    {/* Download the app */}
+                    {t('download')}
                   </ButtonLink>
                   <ButtonLink
                     href="#"
                     variant={dark ? 'black' : 'regular'}
                     className="items-center justify-center hidden space-x-2 font-semibold lg:inline-flex"
                   >
-                    <span>Login</span> <TbArrowRight />
+                    <span>
+                      {/* Login */}
+                      {t('login')}
+                    </span>{' '}
+                    <TbArrowRight />
                   </ButtonLink>
                   {/* <Popover className='lg:hidden'>
               {({ open }) => (
@@ -140,9 +145,7 @@ export function Header({ carousel = false, dark = true }) {
                                   )}
                                   key={'Mobile-navigation-' + item.id}
                                 >
-                                  <span>
-                                    {navigationTranslated[index].label}
-                                  </span>
+                                  <span>{Tnavigation[index].label}</span>
                                 </MobileNavLink>
                               ))}
                               <div className="px-3 py-2">
@@ -167,14 +170,17 @@ export function Header({ carousel = false, dark = true }) {
                                 size="large"
                                 className="w-full text-center"
                               >
-                                Login to your account
+                                {/* Login to your account */}
+                                {t('download')}
                               </ButtonLink>
                               <div className="text-center">
                                 <span className="text-sm text-gray-500">
-                                  Don&apos;t have an account?
+                                  {/* Don&apos;t have an account? */}
+                                  {t('new')}
                                 </span>
                                 <ButtonLink href="#!" variant="link">
-                                  Register
+                                  {/* Register */}
+                                  {t('register')}
                                 </ButtonLink>
                               </div>
                             </div>

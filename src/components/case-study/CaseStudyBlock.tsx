@@ -4,15 +4,18 @@ import Link from 'next/link'
 import React from 'react'
 import { CaseStudyBlockProps } from './caseStudiesData'
 import Tag from './Tag'
+import { useTranslation } from 'next-i18next'
 
 const CaseStudyBlock = ({ ...item }: CaseStudyBlockProps) => {
+  const { t } = useTranslation('casestudy')
+
   return (
     <li
       //   key={'case-study-item-' + index}
       className="px-6 py-6 border-2 md:py-8 border-gray-200/50 rounded-3xl"
     >
       <article>
-        <div className="gap-6 space-y-4 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+        <div className="gap-6 space-y-4 md:grid md:grid-cols-3 lg:grid-cols-4 lg:items-baseline lg:space-y-0">
           <Link href={`/case-study/${item.id}`}>
             <Image
               src={item.image}
@@ -27,7 +30,10 @@ const CaseStudyBlock = ({ ...item }: CaseStudyBlockProps) => {
           <div className="space-y-5 xl:col-span-3">
             <div className="space-y-6">
               <dl>
-                <dt className="text-sm text-gray-400">Published on</dt>
+                <dt className="text-sm text-gray-400">
+                  {/* Published on */}
+                  {t('published-on')}
+                </dt>
                 <dd className="text-base font-medium leading-6 text-primary-500">
                   <time dateTime={item.date.toISOString()}>
                     {format(new Date(), 'eeee, d LLL, yyyy')}
@@ -59,7 +65,8 @@ const CaseStudyBlock = ({ ...item }: CaseStudyBlockProps) => {
                 className="text-primary-500 hover:text-primary-600"
                 aria-label={`Read "${item.title}"`}
               >
-                Read more &rarr;
+                {/* Read more  */}
+                {t('read-more')} &rarr;
               </Link>
             </div>
           </div>

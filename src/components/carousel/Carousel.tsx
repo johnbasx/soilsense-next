@@ -4,6 +4,7 @@ import ReactCarousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 import CustomDot, { carouselItems } from './CustomDot'
 // import Image from "@/components/image/Image";
+import { useTranslation } from 'next-i18next'
 
 const responsive = {
   superLargeDesktop: {
@@ -26,6 +27,11 @@ const responsive = {
 }
 
 const Carousel = () => {
+  const { t } = useTranslation('home')
+  const TcarouselItems = t('carousel-header.items', {
+    returnObjects: true,
+  })
+
   return (
     <div className="relative overflow-hidden">
       <ReactCarousel
@@ -50,10 +56,12 @@ const Carousel = () => {
             <div className="absolute w-full h-full p-6 text-white pointer-events-none bg-gradient-to-bl from-black/80 to-black/5">
               <div className="flex flex-col items-center justify-center max-w-5xl px-8 pt-32 pb-8 mx-auto space-y-4 text-center md:px-0 md:text-left md:items-start">
                 <h1 className="text-5xl font-extrabold md:text-7xl drop-shadow">
-                  {item.heading}
+                  {/* {item.heading} */}
+                  {TcarouselItems[idx].heading}
                 </h1>
                 <p className="text-xl md:text-2xl drop-shadow">
-                  {item.tagline}
+                  {/* {item.tagline} */}
+                  {TcarouselItems[idx].tagline}
                 </p>
               </div>
             </div>

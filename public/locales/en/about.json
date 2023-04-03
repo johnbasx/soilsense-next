@@ -1,0 +1,94 @@
+{
+  "title": "About - SoilSense | Plantation with Technology",
+
+  "about-hero": {
+    "heading": "About SoilSense",
+    "description": "SoilSense collects soil and environment data around the farm and transforms it into useful information with the help of IoT based devices and sensors to monitor the soil health (crop field). The information is easy to access and provides a wide sense of field conditions",
+    "links": [
+      { "name": "Case studies", "href": "/case-studies" },
+      {
+        "name": "Internship programs",
+        "href": "https://sn-silos.vercel.app/career"
+      },
+      { "name": "Our vision", "href": "/" },
+      { "name": "Meet our leadership", "href": "#team" }
+    ],
+    "stats": [
+      { "name": "Clients worldwide", "value": "89,897" },
+      { "name": "Full-time employees", "value": "50+" },
+      { "name": "Stores", "value": "200+" },
+      { "name": "Hirings", "value": "100+" }
+    ]
+  },
+
+  "our-vision": {
+    "heading": "What we aim to provide",
+    "description": "IoT based devices and sensors to monitor the soil health (crop field). The information is easy to access and provides a wide sense of field conditions.",
+    "data": [
+      {
+        "name": "Our Vision",
+        "about": "To make a sustainable future in agriculture Industry with the right inclusion of technology and innovation"
+      },
+      {
+        "name": "Our Mission",
+        "about": "To provide a cost effective method to increase the yeild with the help of organic means and technology"
+      },
+      {
+        "name": "Our Future",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nulla necessitatibus voluptates praesentium quas maiores aspernatur voluptate sequi enim eveniet illo id ut natus, dolores cumque hic alias est facilis?"
+      },
+      {
+        "name": "Our Drive",
+        "about": "Sequi enim eveniet illo id ut natus, dolores cumque hic alias est facilis. aspernatur voluptate sequi enim eveniet illo id ut natus, dolores cumque hic alias est facili"
+      }
+    ]
+  },
+
+  "our-journey": {
+    "heading": "Our Journey",
+    "description": "Let's have an insight look to ths journey we had over the years to reach this point."
+  },
+
+  "team": {
+    "heading": "Meet Our Team",
+    "description": "With over 40+ years of combined experience, we've got a well-seasoned team at the helm."
+  },
+
+  "faq": {
+    "heading": "Frequently asked questions (FAQs)",
+    "questions": [
+      {
+        "question": "How can I get the services from Soil Sense?",
+        "answer": "Superiority good fearful faithful ascetic marvelous inexpedient against chaos faith. Play grandeur disgust prejudice fearful moral intentions. Grandeur overcome faithful madness joy snare truth of ultimate moral mountains"
+      },
+      {
+        "question": "What does Soil quality management exactly mean?",
+        "answer": "Ubermensch spirit suicide moral noble christian fearful sexuality justice decrepit. Selfish love hatred zarathustra intentions grandeur good self contradict ultimate hatred. Truth marvelous faithful horror salvation dead justice pious virtues burying pious intentions noble. Selfish ascetic holiest holiest society morality."
+      },
+      {
+        "question": "What is the most important thing about soil?",
+        "answer": "Soil plays an important role in both air and water quality. Poor quality soil that is not covered with plants or residues blows with the wind, causing dust storms. It will erode with the rain, adding nutrients to streams, rivers and lakes, and makes them muddy. Soil that has good quality resists wind and water erosion. The rain that falls on good quality soil moves into the ground to be used by plants, or to recharge aquifers. The water is purified as it moves through the soil because the soil is a natural filter that removes pollutants in three ways: chemically, physically, and biologically. Clay particles in soil have a negative charge, and they attract positively charged pollutants and hold them in the soil. Most heavy metal pollutants have positive charges and so are chemically trapped in soils so they do not reach water tables"
+      },
+      {
+        "question": "What is the difference between Soil Temperature and Soil Humidity?",
+        "answer": "Suicide endless endless hatred battle ultimate revaluation. Decieve will horror ultimate abstract ideal justice reason chaos convictions selfish noble. Intentions madness pinnacle christianity derive madness justice salvation society. Holiest oneself joy self virtues christian. Decieve faith inexpedient horror derive contradict moral joy gains war selfish."
+      },
+      {
+        "question": "Can I use Soil Sense technology for free?",
+        "answer": "No, Derive dead play inexpedient hatred fearful spirit war morality madness hatred. Fearful dead convictions fearful enlightenment decrepit ultimate oneself depths revaluation."
+      },
+      {
+        "question": "I want to hire for more than one project with Soil Sense. Is that possible?",
+        "answer": "Yes, Fearful dead convictions fearful enlightenment decrepit ultimate oneself depths."
+      },
+      {
+        "question": "What is some of the technology you use when you are working?",
+        "answer": "Technology? Wow! What a question! Soil scientists work with many types of technology, from extremely simple (hands, picks, and water bottles) to extremely complex. Some of the advanced technologies include: geographic positioning systems, geographic information systems, laser surveying systems, infrared thermometry, multispectral imagery, X-ray spectroscopy (mineralogists), several types of spectrophotometers (atomic absorption, plasma emission, etc.; fertility and environmental specialists), respirometers (biologists studying the activity of soil organisms), time domain reflectometry and various types of psychrometry (soil physicists studying water in the soil)"
+      },
+      {
+        "question": "How does support work?",
+        "answer": "Sarathustra intentions grandeur good self contradict ultimate hatred. Truth marvelous faithful horror salvation dead justice pious virtues burying pious intentions noble."
+      }
+    ]
+  }
+}

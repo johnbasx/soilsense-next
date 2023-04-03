@@ -37,10 +37,10 @@ export const Button = ({
   return (
     <button
       className={clsx(
-        'h-fit w-fit rounded-lg text-xs font-medium transition-all',
+        'h-fit w-fit rounded-lg text-xs font-semibold transition-all',
         'disabled:cursor-not-allowed disabled:opacity-50',
         className,
-        size === 'large' && 'px-5 py-3 text-base',
+        size === 'large' && 'px-5 py-3 text-lg',
         size === 'regular' && 'px-4 py-2 text-sm',
         size === 'small' && 'px-2 py-2',
         variant === 'regular' &&

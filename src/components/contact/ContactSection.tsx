@@ -7,10 +7,10 @@ import {
   HiOutlineMail,
   HiOutlinePhone,
 } from 'react-icons/hi'
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from 'next-i18next'
 
 const ContactSection = () => {
-  // const { t } = useTranslation("contact");
+  const { t } = useTranslation('contact')
 
   return (
     <section>
@@ -18,13 +18,13 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 gap-8 px-6 py-12 mx-auto max-w-7xl md:py-24 md:grid-cols-2">
           <div className="px-6 py-12 text-white md:px-10 bg-primary-500 rounded-3xl">
             <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-              Let&apos;s work together
-              {/* {t("contact-section.heading")} */}
+              {/* Let&apos;s work together */}
+              {t('contact-section.heading')}
             </h2>
             <address className="flex flex-col items-start justify-center gap-2 py-6 not-italic font-medium text-left">
               <h4 className="text-xl font-semibold">
-                Office Details
-                {/* {t("contact-section.office-details")} */}
+                {/* Office Details */}
+                {t('contact-section.office-details')}
               </h4>
               <div className="flex flex-col gap-4 mt-4">
                 <a
@@ -33,9 +33,9 @@ const ContactSection = () => {
                 >
                   <HiOutlineLocationMarker className="flex-shrink-0 w-5 h-5 mt-1 text-primary-50" />
                   <p className="max-w-sm">
-                    A26/12, 1st Floor, Chadha Market, Naya Bazar, Chandni Chowk,
-                    Punjab - 110728
-                    {/* {t("contact-section.address")} */}
+                    {/* A26/12, 1st Floor, Chadha Market, Naya Bazar, Chandni Chowk,
+                    Punjab - 110728 */}
+                    {t('contact-section.address')}
                   </p>
                 </a>
                 <div className="inline-flex items-start space-x-2 font-medium">
@@ -63,7 +63,7 @@ const ContactSection = () => {
                 >
                   <HiOutlineMail className="flex-shrink-0 w-5 h-5 mt-px text-emerald-50" />
                   <span className="sr-only">Email: </span>
-                  <span>support@snsilos.com</span>
+                  <span>support@soilsense.com</span>
                 </a>
               </div>
             </address>
@@ -78,8 +78,8 @@ const ContactSection = () => {
                 htmlFor="first-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                First name
-                {/* {t("contact-section.form.first-name")} */}
+                {/* First name */}
+                {t('contact-section.form.first-name')}
               </label>
               <div className="mt-1">
                 <input
@@ -97,8 +97,8 @@ const ContactSection = () => {
                 htmlFor="last-name"
                 className="block text-sm font-medium text-gray-700"
               >
-                Last name
-                {/* {t("contact-section.form.last-name")} */}
+                {/* Last name */}
+                {t('contact-section.form.last-name')}
               </label>
               <div className="mt-1">
                 <input
@@ -116,8 +116,8 @@ const ContactSection = () => {
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700"
               >
-                Email
-                {/* {t("contact-section.form.email")} */}
+                {/* Email */}
+                {t('contact-section.form.email')}
               </label>
               <div className="mt-1">
                 <input
@@ -135,8 +135,8 @@ const ContactSection = () => {
                 htmlFor="company"
                 className="block text-sm font-medium text-gray-700"
               >
-                Company
-                {/* {t("contact-section.form.company")} */}
+                {/* Company */}
+                {t('contact-section.form.company')}
               </label>
               <div className="mt-1">
                 <input
@@ -155,12 +155,12 @@ const ContactSection = () => {
                   htmlFor="phone"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Phone
-                  {/* {t("contact-section.form.phone")} */}
+                  {/* Phone */}
+                  {t('contact-section.form.phone')}
                 </label>
                 <span id="phone-description" className="text-sm text-gray-400">
-                  Optional
-                  {/* {t("contact-section.form.optional")} */}
+                  {/* Optional */}
+                  {t('contact-section.form.optional')}
                 </span>
               </div>
               <div className="mt-1">
@@ -181,15 +181,15 @@ const ContactSection = () => {
                   htmlFor="how-can-we-help"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  How can we help you?
-                  {/* {t("contact-section.form.message")} */}
+                  {/* How can we help you? */}
+                  {t('contact-section.form.message')}
                 </label>
                 <span
                   id="how-can-we-help-description"
                   className="text-sm text-gray-500"
                 >
-                  Max. 500 characters
-                  {/* {t("contact-section.form.max")} */}
+                  {/* Max. 500 characters */}
+                  {t('contact-section.form.max')}
                 </span>
               </div>
               <div className="mt-1">
@@ -209,8 +209,8 @@ const ContactSection = () => {
                 htmlFor="how-did-you-hear-about-us"
                 className="block text-sm font-medium text-gray-700"
               >
-                How did you hear about us?
-                {/* {t("contact-section.form.reference")} */}
+                {/* How did you hear about us? */}
+                {t('contact-section.form.reference')}
               </label>
               <div className="mt-1">
                 <input
@@ -225,8 +225,8 @@ const ContactSection = () => {
             <div className="mt-2 text-right sm:col-span-2">
               <button className="inline-flex items-center justify-center px-8 py-2 space-x-2 font-semibold text-center text-white duration-200 rounded-md bg-primary-500 hover:bg-emerald-600">
                 <span>
-                  Submit form
-                  {/* {t("contact-section.form.submit")} */}
+                  {/* Submit form */}
+                  {t('contact-section.form.submit')}
                 </span>
                 <HiArrowRight />
               </button>

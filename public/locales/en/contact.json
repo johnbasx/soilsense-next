@@ -1,0 +1,25 @@
+{
+  "title": "Contact - SoilSense | Plantation with Technology",
+  "contact-section": {
+    "heading": "Let's work together",
+    "office-details": "Office Details",
+    "address": "A26/12, 1st Floor, Chadha Market, Naya Bazar, Chandni Chowk,Punjab - 110728",
+    "form": {
+      "first-name": "First name",
+      "last-name": "Last name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "optional": "Optional",
+      "message": "How can we help you?",
+      "max": "Max. 500 characters",
+      "reference": "How did you hear about us?",
+      "submit": "Submit form"
+    }
+  },
+  "looking-for-career": {
+    "heading": "Looking for a new career?",
+    "tagline": "We’re hiring.",
+    "see-positions": "See open positions"
+  }
+}

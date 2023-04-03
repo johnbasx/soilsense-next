@@ -1,0 +1,85 @@
+{
+  "title": "Services - SoilSense | Plantation with Technology",
+
+  "services-hero": {
+    "heading": "Providing the best farming solutions",
+    "tagline": "Soil Sense farm management system is a user-friendly integrated hardware and software system that connects farm data, weather conditions and past agronomic knowledge to provide better and sustainable farming.",
+    "button": "Work with us"
+  },
+
+  "key-features": {
+    "heading": "Key Features",
+    "know-more": "Know more",
+    "blocks": [
+      {
+        "name": "Soil Nutrient Balance (NPK)",
+        "about": "It is an essential feature for maintaining and raising the crop. As nutrient surplus indicates a risk of polluting soil, water and air while nutrient deficit indicates declining soil fertility. It is measured in kilograms of nutrients per hectare of agricultural land."
+      },
+      {
+        "name": "Precise irrigation (Moisture)",
+        "about": "It is an efficient and sustainable approach towards agriculture which allows the efficient use of water at the right time to provide optimal growing conditions for the crops."
+      },
+      {
+        "name": "Weather forecast (Temperature, Humidity)",
+        "about": "Accurate weather data can assist farmers in determining when they should work most efficiently in their day-to-day operations. Its forecast helps in controlling the pests and other crop diseases to spread over the field"
+      },
+      {
+        "name": "Soil Health (Electrical conductivity, pH)",
+        "about": "Soil type is considered to be one of the most vital factors which may determine the yield of the crops. Different crops require different soil types with varying parameters."
+      }
+    ]
+  },
+
+  "soil-health": {
+    "heading": "Soil Health",
+    "tagline": "Soil is a living system, and therefore, the basic requirements for the health of soil systems are similar to that of humans",
+    "topic": "The Search for the Meaning of Soil Health: Lessons from Human Health & Ecosystem Health",
+    "about": "Soil is central to human wellbeing through its provision of critical ecosystem services, including food and clean water. These services emerge through the self-organising nature of the soil system. Here, we consider the lessons learnt from the evolution of the understanding of human and ecosystem health for the conceptualisation and application of soil health. We share the fundamental and practical challenges of managing the land with respect to soil health, and the need for policy to drive the protection of soil as one of our most important non-renewable natural resources.",
+    "subtopic": "Current Definitions of Soil Health",
+    "des": "Soil health is currently defined via the following iterations: “the capacity of a living soil to function, within natural or managed ecosystem boundaries, to sustain plant and animal productivity, maintain or enhance water and air quality, and promote plant and animal health”.",
+    "learn-more": "Learn More"
+  },
+
+  "future-services": {
+    "heading": "Future Services",
+    "tagline": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "data": [
+      {
+        "heading": "Satellite Mapping",
+        "tagline": "Satellite Imagery Solutions",
+        "points": [
+          {
+            "about": "Satellite imagery shows how the Earth’s surface looks from above. It depicts the Earth’s surface at various spectral, temporal, radiometric, and increasingly detailed spatial resolutions."
+          }
+        ]
+      },
+      {
+        "heading": "Remote farming",
+        "tagline": "A New Technology Underway",
+        "points": [
+          {
+            "about": "It is defined as monitoring and managing farms remotely through the application of the Internet, with less/ without direct human intervention."
+          }
+        ]
+      },
+      {
+        "heading": "Pest/Disease forecast",
+        "tagline": "Pest dynamics in relation to climate change",
+        "points": [
+          {
+            "about": "It is the accurate monitoring of pests and predicting pest outbreaks through analyzing relevant data based on biology, mathematics, statistics, etc."
+          }
+        ]
+      },
+      {
+        "heading": "Robots & Drones",
+        "tagline": "Introduction to robots and drones for farming",
+        "points": [
+          {
+            "about": "The use of drones in almost every sector of the economy is growing fast, but drone usage in the agricultural industry is booming. According to some reports, the agricultural drone market is expected to grow from a $1.2 billion(USD) industry in 2019 to $4.8 billion in 2024. From scouting to security, drone use will become more ubiquitous on large and small scale farms in a few short years."
+          }
+        ]
+      }
+    ]
+  }
+}

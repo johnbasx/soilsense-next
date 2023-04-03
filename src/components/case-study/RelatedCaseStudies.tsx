@@ -2,13 +2,17 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 import { relatedStudiesData } from './relatedStudiesData'
+import { useTranslation } from 'next-i18next'
 
 const RelatedCaseStudies = () => {
+  const { t } = useTranslation('casestudy')
+
   return (
     <aside aria-label="Related articles" className="py-8 lg:py-24 bg-gray-50">
       <div className="max-w-screen-xl px-6 mx-auto">
         <h2 className="mb-8 text-4xl font-bold text-gray-900">
-          Related case studies
+          {/* Related case studies */}
+          {t('related')}
         </h2>
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {relatedStudiesData.map((item) => (

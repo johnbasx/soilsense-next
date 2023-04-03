@@ -4,10 +4,10 @@ import { useRouter } from 'next/router'
 import hnFlag from '/public/assets/flag/hn-flag.svg'
 import enFlag from '/public/assets/flag/en-flag.svg'
 import Image from 'next/image'
-// import { useTranslation } from 'next-i18next'
+import { useTranslation } from 'next-i18next'
 
 const LocaleSwitcher = ({ onClick }: { onClick: () => void }) => {
-  //   const { t, i18n, ready } = useTranslation('common')
+  const { t } = useTranslation('common')
 
   const { locales, locale, pathname, query, asPath } = useRouter()
   const otherLocales = locales?.filter((l) => l !== locale) // Find all the locales apart from the current locale.
@@ -25,7 +25,10 @@ const LocaleSwitcher = ({ onClick }: { onClick: () => void }) => {
             onClick={onClick}
           >
             <div className="block md:hidden">
-              <span>Change language : </span>
+              <span>
+                {/* Change language */}
+                {t('change')}:{' '}
+              </span>
               <span className="font-semibold underline">
                 {locale == 'hn' && 'Hindi'}
                 {locale == 'en' && 'English'}

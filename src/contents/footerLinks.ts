@@ -7,22 +7,22 @@ export const footerLinksData = [
       {
         id: createID(),
         name: 'Company Review',
-        link: '/company-review',
+        link: '/services',
       },
       {
         id: createID(),
         name: 'Innovate with us',
-        link: '/innovate-with-us',
+        link: '/services',
       },
       {
         id: createID(),
         name: 'Consulting',
-        link: '/consulting',
+        link: '/contact',
       },
       {
         id: createID(),
         name: 'Tips & Tricks',
-        link: '/tips-&-tricks',
+        link: '/case-studies',
       },
     ],
   },
@@ -33,12 +33,12 @@ export const footerLinksData = [
       {
         id: createID(),
         name: 'Soilsense Profile',
-        link: '/profile',
+        link: '/about',
       },
       {
         id: createID(),
         name: 'Meet the Team',
-        link: '/meet-the-team',
+        link: '#team',
       },
       {
         id: createID(),
@@ -48,7 +48,7 @@ export const footerLinksData = [
       {
         id: createID(),
         name: "Work we've done",
-        link: '/work-done',
+        link: '/case-studies',
       },
     ],
   },
@@ -60,33 +60,33 @@ export const footerLinksData = [
       {
         id: createID(),
         name: 'What we do?',
-        link: '#!',
+        link: '/services',
       },
       {
         id: createID(),
         name: 'Join our team',
-        link: '/join-our-team',
+        link: '/contact',
       },
       {
         id: createID(),
         name: 'Work with us',
-        link: '#!',
+        link: '/contact',
       },
     ],
   },
   {
     id: createID(),
-    footerHead: 'Press',
+    footerHead: 'Case studies',
     footers: [
       {
         id: createID(),
-        name: 'Photos',
-        link: '#!',
+        name: 'Studies',
+        link: '/case-studies',
       },
       {
         id: createID(),
-        name: 'Blog',
-        link: '/blog',
+        name: 'Research',
+        link: '/case-studies',
       },
     ],
   },
@@ -97,12 +97,12 @@ export const footerLinksData = [
       {
         id: createID(),
         name: 'A-47/6, opp. Jain Support Mandir, Udhyog Nagar, Punjab, India - 123456',
-        link: '/profile',
+        link: 'https://maps.google.com/maps/dir//30.8994649,76.7284529/@30.8994649,76.7284529,14z',
       },
       {
         id: createID(),
         name: '+91-9977553300',
-        link: '/meet-the-team',
+        link: 'tel:+919977553300',
       },
     ],
   },

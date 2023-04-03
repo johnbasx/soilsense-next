@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { nanoid } from 'nanoid'
 import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from 'next-i18next'
 
 export const teamData = [
   {
@@ -28,22 +28,22 @@ export const teamData = [
 ]
 
 const Team = () => {
-  // const { t } = useTranslation("about");
+  const { t } = useTranslation('about')
 
   return (
-    <div className="flex flex-col py-24 bg-primary-500">
+    <div id="team" className="flex flex-col py-24 bg-primary-500">
       <div className="container px-4 mx-auto max-w-7xl">
         <div className="flex flex-wrap justify-center mb-12 text-center">
           <div className="w-full px-4 lg:w-6/12">
             <h1 className="mb-4 text-4xl font-bold text-primary-50 md:text-5xl">
-              Meet Our Team
-              {/* {t("team.heading")} */}
+              {/* Meet Our Team */}
+              {t('team.heading')}
             </h1>
 
             <p className="text-lg text-primary-50">
-              With over 100 years of combined experience, we&apos;ve got a
-              well-seasoned team at the helm.
-              {/* {t("team.description")} */}
+              {/* With over 40+ years of combined experience, we&apos;ve got a
+              well-seasoned team at the helm. */}
+              {t('team.description')}
             </p>
           </div>
         </div>

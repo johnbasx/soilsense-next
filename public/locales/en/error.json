@@ -7,14 +7,14 @@
   "home": "Take me home",
   "cards": [
     {
-      "heading": "About SN Silos",
+      "heading": "About SoilSense",
       "tagline": "Want to know more about us?",
       "link-text": "Know more"
     },
     {
-      "heading": "Our blog & press",
-      "tagline": "Read the latest posts and photos.",
-      "link-text": "View lastest posts"
+      "heading": "Our Case studies",
+      "tagline": "Read our latest case studies and research.",
+      "link-text": "View lastest case studies"
     },
     {
       "heading": "Want to talk with us?",

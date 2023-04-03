@@ -38,7 +38,7 @@ export function NavLinks() {
 
   return (
     <>
-      {navigationLinks.map(({ label, id, link }, index) => (
+      {navigationLinks.map(({ id, link }, index) => (
         <Link
           href={link}
           key={'navigation-' + id}

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { nanoid } from 'nanoid'
 import clsx from 'clsx'
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from 'next-i18next'
 import { TbArrowRight } from 'react-icons/tb'
 
 export const futureServicesData = [
@@ -64,22 +64,22 @@ export const futureServicesData = [
 ]
 
 const FutureServices = () => {
-  //   const { t } = useTranslation("services");
-  //   const endToEndTranslations = t("end-to-end-supply.data", {
-  //     returnObjects: true,
-  //   });
+  const { t } = useTranslation('services')
+  const Tservices = t('future-services.data', {
+    returnObjects: true,
+  })
   return (
     <div className="container px-6 mx-auto my-16 max-w-7xl">
       <div className="flex flex-col items-center justify-center max-w-2xl gap-4 py-8 mx-auto text-center">
         <h2 className="text-4xl font-bold lg:text-5xl">
-          Future Services
-          {/* {t("end-to-end-supply.heading")} */}
+          {/* Future Services */}
+          {t('future-services.heading')}
         </h2>
         <p className="text-gray-600">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
+          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, a
           expedita? Sed laudantium saepe quod. Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit.
-          {/* {t("end-to-end-supply.description")} */}
+          consectetur adipisicing elit. */}
+          {t('future-services.tagline')}
         </p>
       </div>
       {futureServicesData.map((item, index) => (
@@ -111,23 +111,23 @@ const FutureServices = () => {
               <div className="flex items-center h-full py-6 text-left text-black rounded-lg lg:p-6 lg:pl-12 lg:text-left">
                 <div className="flex flex-col gap-3 lg:pl-12">
                   <h2 className="text-2xl font-bold lg:text-3xl">
-                    {item.heading}
-                    {/* {endToEndTranslations[index].heading} */}
+                    {/* {item.heading} */}
+                    {Tservices[index].heading}
                   </h2>
                   <span className="font-semibold tracking-wider uppercase text-primary-500">
-                    {item.tagline}
-                    {/* {endToEndTranslations[index].tagline} */}
+                    {/* {item.tagline} */}
+                    {Tservices[index].tagline}
                   </span>
                   <ul className="">
-                    {item.points.map((point) => (
+                    {item.points.map((point, jdx) => (
                       <li
                         key={point.id}
                         className="inline-flex items-start gap-2"
                       >
                         <TbArrowRight className="flex-shrink-0 w-5 h-5 mt-1 text-xl" />
                         <span className="line-clamp-4">
-                          {point.about}
-                          {/* {endToEndTranslations[index].points[idx].about} */}
+                          {/* {point.about} */}
+                          {Tservices[index].points[jdx].about}
                         </span>
                       </li>
                     ))}

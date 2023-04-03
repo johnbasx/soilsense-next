@@ -1,6 +1,8 @@
 import React from 'react'
 import { HiQuestionMarkCircle } from 'react-icons/hi'
 import { nanoid } from 'nanoid'
+import { useTranslation } from 'next-i18next'
+
 const faqData = [
   {
     id: nanoid(),
@@ -57,24 +59,37 @@ const faqData = [
 ]
 
 const FAQ = () => {
+  const { t } = useTranslation('about')
+  // const Tfaq = t('faq.questions', {returnObjects: true})
   return (
     <section className="bg-gray-100">
       <div className="max-w-screen-xl px-4 py-20 mx-auto sm:py-32 lg:px-6">
         <h2 className="mb-8 text-5xl font-bold tracking-tight text-gray-900">
-          Frequently asked questions (FAQs)
+          {/* Frequently asked questions (FAQs) */}
+          {t('faq.heading')}
         </h2>
         <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 md:grid-cols-2">
           {/* 1st Column */}
           <div>
-            {faqData.slice(0, 4).map((item) => (
-              <FAQBlock {...item} key={'faq-left-item-' + item.id} />
+            {faqData.slice(0, faqData.length / 2).map((item, index) => (
+              <FAQBlock
+                index={index}
+                {...item}
+                key={'faq-left-item-' + item.id}
+              />
             ))}
           </div>
           {/* 2nd Column */}
           <div>
-            {faqData.slice(4, 8).map((item) => (
-              <FAQBlock {...item} key={'faq-right-item-' + item.id} />
-            ))}
+            {faqData
+              .slice(faqData.length / 2, faqData.length)
+              .map((item, index) => (
+                <FAQBlock
+                  index={index + faqData.length / 2}
+                  {...item}
+                  key={'faq-right-item-' + item.id}
+                />
+              ))}
           </div>
         </div>
       </div>
@@ -86,18 +101,23 @@ export type FAQBlockType = {
   id: string
   question: string
   answer: string
+  index: number
 }
 export type FAQsType = FAQBlockType[]
 
-export const FAQBlock = ({ ...item }: FAQBlockType) => {
+export const FAQBlock = ({ index, ...item }: FAQBlockType) => {
+  const { t } = useTranslation('about')
+  const Tfaq = t('faq.questions', { returnObjects: true })
   return (
     <div className="mb-10" key={'faq-item-' + item.id}>
       <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900">
         <HiQuestionMarkCircle className="flex-shrink-0 w-5 h-5 mr-2 text-primary-400" />
-        {item.question}
+        {/* {item.question} */}
+        {Tfaq[index].question}
       </h3>
       <p className="p-4 text-gray-600 bg-slate-200/50 rounded-3xl">
-        {item.answer}
+        {/* {item.answer} */}
+        {Tfaq[index].answer}
       </p>
     </div>
   )

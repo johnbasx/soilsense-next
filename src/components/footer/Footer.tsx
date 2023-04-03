@@ -3,8 +3,11 @@ import { Logo } from '@/components/Logo'
 import FooterLinks from './FooterLinks'
 import Copyrights from './Copyrights'
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export function Footer() {
+  const { t } = useTranslation('common')
+
   return (
     <footer
       aria-label="Site Footer"
