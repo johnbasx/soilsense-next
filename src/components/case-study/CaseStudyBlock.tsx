@@ -27,7 +27,7 @@ const CaseStudyBlock = ({ ...item }: CaseStudyBlockProps) => {
             />
           </Link>
 
-          <div className="space-y-5 xl:col-span-3">
+          <div className="space-y-5 lg:col-span-3">
             <div className="space-y-6">
               <dl>
                 <dt className="text-sm text-gray-400">
