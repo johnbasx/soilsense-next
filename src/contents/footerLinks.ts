@@ -1,4 +1,4 @@
-import { createID } from '../utils/helpers'
+import { createID } from '@/utils/helpers'
 export const footerLinksData = [
   {
     id: createID(),
